@@ -1,0 +1,52 @@
+@import "common.css";
+@import "navbar.css";
+@import "sidebar.css";
+
+.slideshow-link-rec
+{
+  white-space: nowrap;
+  align-self: center;
+  margin-top: 8px;
+  color: var(--font-ter);
+  letter-spacing: 0.15px;
+}
+
+.slideshow-link > img
+{
+  min-width: 50px;
+}
+
+
+.sub-link
+{
+  margin-right: 30px;
+  position: relative;
+  bottom: 8px;
+}
+
+
+.font-12
+{
+  font-size: 12px;
+}
+
+h1:nth-last-child(2)
+{
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 1164px)
+{
+  .slideshow-link-rec, .sub-link
+  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .clip:nth-child(1) > h3
+  {
+    margin-top: 4px;
+  }
+}

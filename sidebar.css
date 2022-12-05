@@ -1,0 +1,128 @@
+@import "vars.css";
+
+#sidebar
+{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  gap: 28.7px;
+  align-items: baseline;
+  width: 223px;
+}
+
+#sidebar a:not(:first-of-type) path
+{
+  fill: var(--font-main);
+}
+
+#sidebar > a
+{
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-link, .sidebar-channel
+{
+  color: var(--font-sec);
+}
+
+.sidebar-link
+{
+  gap: 12px;
+}
+
+.sidebar-link > svg
+{
+  width: 22px;
+}
+
+.sidebar-link:nth-child(1)
+{
+  color: #f00;
+}
+
+.sidebar-link:nth-child(3)
+{
+  margin-bottom: 31.3px;
+}
+
+#sidebar > h2, .sidebar-channel
+{
+  position: relative;
+  left: -2px;
+}
+
+#sidebar > h2
+{
+  margin-bottom: 1px;
+  margin-top: 30.3px;
+}
+
+.sidebar-channel
+{
+  gap: 10px;
+  margin-bottom: -5.7px;
+}
+
+.sidebar-setting
+{
+  margin-top: 81.5px;
+  margin-bottom: 40px;
+  color: var(--font-ter);
+}
+
+@media screen and (max-width: 768px)
+{
+  #sidebar
+  {
+    float: unset;
+    position: fixed;
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    background: var(--bg-main);
+    justify-content: space-between;
+    gap: 0;
+    padding: 10px 22px 13px 24px;
+    border-top: 1px solid var(--font-ter);
+    height: 61px;
+  }
+  
+  #sidebar :nth-child(n + 5)
+  {
+    display: none;
+  }
+
+  .sidebar-link
+  {
+    flex-direction: column;
+    font-size: 10px;
+    line-height: 12.55px;
+    gap: 6px;
+  }
+
+  .sidebar-link:nth-child(2)
+  {
+    margin-left: 10px;
+    margin-right: -10px;
+    gap: 5px;
+  }
+
+  .sidebar-link:nth-child(3)
+  {
+    margin-left: 3px;
+    margin-right: -3px;
+    gap: 6px;
+  }
+}
+
+@media (prefers-color-scheme: dark)
+{
+  #sidebar a:not(:first-of-type) path
+  {
+    opacity: 0.4;
+  }
+}
+
