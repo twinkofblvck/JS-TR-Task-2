@@ -1,6 +1,6 @@
-@import "common.css";
-@import "navbar.css";
-@import "sidebar.css";
+@import "../common/common.css";
+@import "../common/navbar.css";
+@import "../common/sidebar.css";
 
 
 #navbar-settings a:nth-last-child(1)

@@ -1,6 +1,6 @@
-@import "common.css";
-@import "navbar.css";
-@import "sidebar.css" screen and (max-width: 768px);
+@import "../common/common.css";
+@import "../common/navbar.css";
+@import "../common/sidebar.css" screen and (max-width: 768px);
 
 #navbar
 {
