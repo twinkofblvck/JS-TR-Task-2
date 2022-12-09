@@ -1,6 +1,6 @@
-@import "common/common.css";
-@import "common/navbar.css";
-@import "common/sidebar.css";
+@import "../../common/styles/common.css";
+@import "../../common/styles/navbar.css";
+@import "../../common/styles/sidebar.css";
 
 .slideshow-link-rec
 {
