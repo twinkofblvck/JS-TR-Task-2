@@ -1,6 +1,6 @@
-@import "../common/common.css";
-@import "../common/navbar.css";
-@import "../common/sidebar.css" screen and (max-width: 768px);
+@import "common/common.css";
+@import "common/navbar.css";
+@import "common/sidebar.css" screen and (max-width: 768px);
 
 #navbar
 {
@@ -619,7 +619,7 @@ main
     margin-top: 4px;
     letter-spacing: 0.15px;
   }
-  
+
   .clip-data > *
   {
     font-size: 13px;
@@ -648,7 +648,7 @@ main
   {
     fill: #fff;
   }
-  
+
   #video-action-buttons > a:not(:nth-last-child(1)) path
   {
     opacity: 0.4;

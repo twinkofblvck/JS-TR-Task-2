@@ -1,6 +1,6 @@
-@import "../common/common.css";
-@import "../common/navbar.css";
-@import "../common/sidebar.css";
+@import "common/common.css";
+@import "common/navbar.css";
+@import "common/sidebar.css";
 
 
 #navbar-settings a:nth-last-child(1)
@@ -241,7 +241,7 @@
     margin-top: -65px;
     gap: 19px;
   }
-  
+
   .sub-link
   {
     bottom: 0;
@@ -259,7 +259,7 @@
   {
     display: none;
   }
-  
+
   #homelink > h3
   {
     display: inline;
@@ -358,4 +358,3 @@
     margin-left: 21px;
   }
 }
-
