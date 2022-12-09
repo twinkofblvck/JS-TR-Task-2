@@ -1,0 +1,179 @@
+@import "vars.css";
+
+#navbar
+{
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-bottom: 50px;
+}
+
+#hamburger path
+{
+  fill: var(--font-main);
+}
+
+#homelink > svg:nth-child(2) > path
+{
+  fill: var(--font-main);
+}
+
+#navbar-settings path
+{
+  fill: var(--font-main);
+}
+
+#searchbar
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  max-width: 830px;
+  width: 50vw;
+  background: var(--bg-sec);
+  border-radius: 22px;
+  margin-left: 31px;
+  padding: 0 17px 0 23px;
+}
+
+#searchbar-input
+{
+  border: none;
+  background: none;
+}
+
+#searchbar-input::placeholder
+{
+  color: /* rgba(48, 56, 76, 0.4) */ var(--font-ter);
+}
+
+#searchbar-link *
+{
+  fill: var(--font-main);
+}
+
+#navbar-settings
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+  flex: 1;
+  margin-right: 70px;
+}
+
+#homelink
+{
+  white-space: nowrap;
+}
+
+#homelink > :nth-child(1)
+{
+  margin-right: -1px;
+}
+
+#hamburger, #navbar-settings, #homelink > :nth-child(1), #searchbar-link
+{
+  margin-top: 2px;
+  margin-bottom: -2px;
+}
+
+#navbar-bell
+{
+  position: relative;
+}
+
+#navbar-bell:after
+{
+  content: "3";
+  border-radius: 50%;
+  color: #fff;
+  background: #f00;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -6.2px;
+  right: -4.6px;
+  font-size: 12px;
+  line-height: 15.06px;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+  border: 1px solid #fff;
+}
+
+@media screen and (max-width: 1164px)
+{
+  #navbar-settings
+  {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  #navbar
+  {
+    padding-bottom: 16px;
+  }
+
+  #navbar-settings a:not(#navbar-profile-link)
+  {
+    display: none;
+  }
+
+  #navbar-settings
+  {
+    margin-right: 0;
+  }
+
+  #navbar-profile-link > img
+  {
+    width: 30px;
+    height: 30px;
+  }
+
+  #searchbar
+  {
+    padding: 0;
+    background: none;
+    margin: 0;
+    height: min-content;
+    justify-content: flex-end;
+  }
+
+  #navbar-settings, #homelink > :nth-child(1), #searchbar-link
+  {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #searchbar-link
+  {
+    margin-right: -4px;
+  }
+
+  #navbar-profile-link
+  {
+    margin-right: 1px;
+  }
+
+  #hamburger
+  {
+    display: none;
+  }
+
+  #searchbar-input
+  {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark)
+{
+  #navbar-settings > a:not(:last-of-type) path
+  {
+    opacity: 0.4;
+  }
+}
